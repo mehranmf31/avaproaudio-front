@@ -19,5 +19,14 @@
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
     "@typescript-eslint/explicit-function-return-type": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["**/*.stories.*"],
+      "rules": {
+        "import/no-anonymous-default-export": "off",
+        "@typescript-eslint/consistent-type-assertions": "off"
+      }
+    }
+  ]
 }

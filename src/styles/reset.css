@@ -1,0 +1,35 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: auto;
+  background-color: #ffffff;
+  margin: 0;
+  @apply font-sans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar {
+  @apply w-1;
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply bg-gray-300;
+  @apply rounded-lg;
+  @apply w-1;
+}
+
+*:focus,
+*:focus-visible {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}

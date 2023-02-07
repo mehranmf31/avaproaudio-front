@@ -1,0 +1,56 @@
+#e302pyQgejw2 {
+  animation: e302pyQgejw2_c_o 1200ms linear infinite normal forwards;
+}
+
+@keyframes e302pyQgejw2_c_o {
+  0% {
+    opacity: 0.9;
+  }
+  33.333333% {
+    opacity: 0.6;
+  }
+  66.666667% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+#e302pyQgejw3 {
+  animation: e302pyQgejw3_c_o 1200ms linear infinite normal forwards;
+}
+
+@keyframes e302pyQgejw3_c_o {
+  0% {
+    opacity: 0.6;
+  }
+  33.333333% {
+    opacity: 0.3;
+  }
+  66.666667% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+#e302pyQgejw4 {
+  animation: e302pyQgejw4_c_o 1200ms linear infinite normal forwards;
+}
+
+@keyframes e302pyQgejw4_c_o {
+  0% {
+    opacity: 0.3;
+  }
+  33.333333% {
+    opacity: 0.9;
+  }
+  66.666667% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}

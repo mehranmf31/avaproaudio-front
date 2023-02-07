@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import './reset.css';
+@import './image-placeholder.css';
+@import './loading.css';

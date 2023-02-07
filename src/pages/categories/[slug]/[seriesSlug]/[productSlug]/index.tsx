@@ -1,6 +1,10 @@
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 
-export default function Home() {
+export default function Product() {
+  const router = useRouter();
+  const { slug, seriesSlug, productSlug } = router.query;
+
   return (
     <>
       <Head>
@@ -10,7 +14,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1 className="text-3xl">Home!</h1>
+        <h1 className="text-3xl">
+          Product {slug} {seriesSlug} {productSlug}!
+        </h1>
       </main>
     </>
   );

@@ -5,3 +5,8 @@
 @import './reset.css';
 @import './image-placeholder.css';
 @import './loading.css';
+
+body {
+  @apply bg-black;
+  @apply text-white;
+}

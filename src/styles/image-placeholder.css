@@ -13,7 +13,7 @@ img[alt]:after {
   color: transparent;
   text-align: center;
   content: attr(alt);
-  background: #ffffff url(../../public/image-placeholder.svg) no-repeat center;
+  background: #ffffff url(/image-placeholder.svg) no-repeat center;
   background-size: contain;
   width: 100%;
   height: 100%;

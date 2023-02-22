@@ -1,6 +1,5 @@
 import React from 'react';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
-
 import { Logo } from '.';
 
 export default {
@@ -8,8 +7,10 @@ export default {
   component: Logo,
   decorators: [
     (Story) => (
-      <div className="bg-gray-800 p-8 rounded w-96 flex justify-center mx-auto my-10">
-        <Story />
+      <div className="flex justify-center">
+        <div className="bg-gray-800 p-10 rounded-xl inline-flex mx-auto my-10">
+          <Story />
+        </div>
       </div>
     ),
   ],

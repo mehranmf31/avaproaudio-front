@@ -36,7 +36,7 @@ export const Navbar = ({ navLinks, locales }: NavbarProps): JSX.Element => {
         onClick={() => {
           setIsOpen(!isOpen);
         }}
-        maxScreenSize="md"
+        className="lg:opacity-0"
       />
       <header className={cx(s.navbar)}>
         <div className="container flex flex-wrap items-center justify-between mx-auto h-24">
@@ -69,10 +69,20 @@ export const Navbar = ({ navLinks, locales }: NavbarProps): JSX.Element => {
           >
             <div className={cx(s.navbar__nav__inner)}>
               {navLinks.map((l) => (
-                <Link className="d-block max-md:py-5" href={l.url} key={l.url}>
+                <Link className="d-block max-md:mb-8" href={l.url} key={l.url}>
                   {l.name}
                 </Link>
               ))}
+              <div className="flex md:hidden justify-start md:order-2 w-20 space-x-2">
+                {locales.map((l) => (
+                  <LocaleButton
+                    key={l.language}
+                    language={l.language}
+                    label={l.label}
+                    isActive={l.isActive}
+                  />
+                ))}
+              </div>
             </div>
           </nav>
         </div>

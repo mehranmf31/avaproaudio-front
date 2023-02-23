@@ -27,7 +27,7 @@ export const LocaleButton = ({
       )}
       aria-label={`Switch to language ${language}`}
     >
-      {label}
+      {label.slice(0, 2)}
     </button>
   );
 };

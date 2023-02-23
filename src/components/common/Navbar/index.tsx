@@ -38,7 +38,7 @@ export const Navbar = ({ navLinks, locales }: NavbarProps): JSX.Element => {
         }}
         className="lg:opacity-0"
       />
-      <header className={cx(s.navbar)}>
+      <header className={cx(s.navbar)} dir="ltr">
         <div className="container flex flex-wrap items-center justify-between mx-auto h-24">
           <Link href="/">
             <Logo />
@@ -51,7 +51,7 @@ export const Navbar = ({ navLinks, locales }: NavbarProps): JSX.Element => {
               }}
             />
           </div>
-          <div className="hidden md:flex items-center justify-end md:order-2 w-20 space-x-2">
+          <div className="hidden md:flex items-center justify-end md:order-2 w-20 gap-x-2">
             {locales.map((l) => (
               <LocaleButton
                 key={l.language}
@@ -73,7 +73,7 @@ export const Navbar = ({ navLinks, locales }: NavbarProps): JSX.Element => {
                   {l.name}
                 </Link>
               ))}
-              <div className="flex md:hidden justify-start md:order-2 w-20 space-x-2">
+              <div className="flex md:hidden justify-start md:order-2 w-20 gap-x-2">
                 {locales.map((l) => (
                   <LocaleButton
                     key={l.language}

@@ -18,7 +18,7 @@ export const SocialMediaLink = ({
 }: SocialMediaLinkProps): JSX.Element => {
   return (
     <a href={link} className={cx(className)}>
-      <Image src={icon} width={size} height={size} name={name} />
+      <Image src={icon} width={size} height={size} alt={name} />
     </a>
   );
 };

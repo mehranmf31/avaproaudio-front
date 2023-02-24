@@ -53,12 +53,13 @@ export const Navbar = ({ navLinks, locales }: NavbarProps): JSX.Element => {
           </div>
           <div className="hidden md:flex items-center justify-end md:order-2 w-20 gap-x-2">
             {locales.map((l) => (
-              <LocaleButton
-                key={l.language}
-                language={l.language}
-                label={l.label}
-                isActive={l.isActive}
-              />
+              <Link href={''} locale={l.language} key={l.language}>
+                <LocaleButton
+                  language={l.language}
+                  label={l.label}
+                  isActive={l.isActive}
+                />
+              </Link>
             ))}
           </div>
           <nav
@@ -75,12 +76,13 @@ export const Navbar = ({ navLinks, locales }: NavbarProps): JSX.Element => {
               ))}
               <div className="flex md:hidden justify-start md:order-2 w-20 gap-x-2">
                 {locales.map((l) => (
-                  <LocaleButton
-                    key={l.language}
-                    language={l.language}
-                    label={l.label}
-                    isActive={l.isActive}
-                  />
+                  <Link href={''} locale={l.language} key={l.language}>
+                    <LocaleButton
+                      language={l.language}
+                      label={l.label}
+                      isActive={l.isActive}
+                    />
+                  </Link>
                 ))}
               </div>
             </div>

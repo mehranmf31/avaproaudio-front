@@ -41,24 +41,24 @@ export const Footer = ({
         <div className="col-span-2 my-8 flex flex-col gap-y-5">
           <p className="text-2xl font-light mb-3">{productLinks.title}</p>
           {productLinks.links.map((pl) => (
-            <FooterDataRow key={pl.link} text={pl.text} link={pl.link} />
+            <FooterDataRow key={pl.text} text={pl.text} link={pl.link} />
           ))}
         </div>
         <div className="col-span-2 my-8 flex flex-col gap-y-5">
           <p className="text-2xl font-light mb-3">{topLinks.title}</p>
           {topLinks.links.map((tl) => (
-            <FooterDataRow key={tl.link} text={tl.text} link={tl.link} />
+            <FooterDataRow key={tl.text} text={tl.text} link={tl.link} />
           ))}
         </div>
         <div className="col-span-3 my-8 flex flex-col gap-y-5">
           <p className="text-2xl font-light mb-3">{contactLinks.title}</p>
           {contactLinks.links.map((cl) => (
-            <FooterDataRow key={cl.link} title={cl.title} text={cl.text} link={cl.link} />
+            <FooterDataRow key={cl.text} title={cl.title} text={cl.text} link={cl.link} />
           ))}
         </div>
         <div className="col-span-2 flex gap-x-6 lg:justify-end items-start my-8">
           {socialLinks.map((sl) => (
-            <SocialMediaLink icon={sl.icon} name={sl.name} link={sl.link} key={sl.link} />
+            <SocialMediaLink key={sl.name} icon={sl.icon} name={sl.name} link={sl.link} />
           ))}
         </div>
       </nav>

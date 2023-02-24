@@ -2,6 +2,7 @@ export const MAIN = '/';
 export const ABOUT = '/about';
 export const CONTACT = '/contact';
 export const DISTRIBUTORS = '/distributors';
+export const SUPPORT = '/support';
 export const CATEGORIES = '/categories';
 export const CATEGORY = (slug: string) => `/categories/${slug}`;
 export const PRODUCTS = (categorySlug: string, seriesSlug: string) =>

@@ -28,4 +28,5 @@ Default.args = {
     { language: 'en', label: 'en', isActive: true },
     { language: 'fa', label: 'فا', isActive: false },
   ],
+  locale: 'en',
 };

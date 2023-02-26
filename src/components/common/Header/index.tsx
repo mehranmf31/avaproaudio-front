@@ -9,6 +9,7 @@ import { LocaleButton } from '../LocaleButton';
 import { MenuToggleButton } from '../MenuToggleButton';
 import { Overlay } from '../Overlay';
 import { Container } from '@/components/ui/Container';
+import { useAutoCloseMenu } from '../../../hooks/useAutoCloseMenu';
 
 export interface HeaderProps {
   navLinks: NavLinks[];
@@ -31,6 +32,9 @@ export const Header = ({ navLinks, locales, locale }: HeaderProps): JSX.Element 
   const [isOpen, setIsOpen] = useState(false);
   const { isRtl } = useDirection();
   useHideBodyOverflow(isOpen);
+  useAutoCloseMenu(isOpen, () => {
+    setIsOpen(false);
+  });
 
   return (
     <>

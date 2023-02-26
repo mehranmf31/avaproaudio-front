@@ -3,7 +3,7 @@ import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import { Container } from '.';
 
 export default {
-  title: 'common/Container',
+  title: 'ui/Container',
   component: Container,
   decorators: [
     (Story) => (

@@ -37,7 +37,7 @@ export const en = {
       ],
     },
     contactLinks: {
-      titile: 'Contact',
+      title: 'Contact',
       links: [
         { title: 'Tel', text: '+982122626262', link: 'tel:+982122626262' },
         { title: 'Zip', text: '2323659864', link: '1' },

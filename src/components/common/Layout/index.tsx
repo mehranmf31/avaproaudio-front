@@ -1,4 +1,4 @@
-import { Navbar } from '../Navbar';
+import { Header } from '../Header';
 import { useRouter } from 'next/router';
 import { Footer } from '@/components/common/Footer';
 import useTranslation from '@/hooks/useTranslation';
@@ -17,7 +17,7 @@ export const Layout = ({ children }: LayoutProps): JSX.Element => {
 
   return (
     <>
-      <Navbar navLinks={header.navLinks} locales={locales} locale={locale ?? 'en'} />
+      <Header navLinks={header.navLinks} locales={locales} locale={locale ?? 'en'} />
       <main>{children}</main>
       <Footer
         productLinks={footer?.productLinks}

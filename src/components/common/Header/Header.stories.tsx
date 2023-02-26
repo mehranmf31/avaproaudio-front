@@ -1,10 +1,10 @@
 import React from 'react';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Navbar } from '.';
+import { Header } from '.';
 
 export default {
-  title: 'common/Navbar',
-  component: Navbar,
+  title: 'common/Header',
+  component: Header,
   decorators: [
     (Story) => (
       <div className="px-0 mx-0">
@@ -12,9 +12,9 @@ export default {
       </div>
     ),
   ],
-} as ComponentMeta<typeof Navbar>;
+} as ComponentMeta<typeof Header>;
 
-const Template: ComponentStory<typeof Navbar> = (args) => <Navbar {...args} />;
+const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

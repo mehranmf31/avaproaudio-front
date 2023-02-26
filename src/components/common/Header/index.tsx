@@ -2,14 +2,15 @@ import React, { useState } from 'react';
 import { Logo } from '../Logo';
 import Link from 'next/link';
 import cx from 'classnames';
-import s from './Navbar.module.css';
+import s from './Header.module.css';
 import useHideBodyOverflow from '@/hooks/useHideBodyOverflow';
 import useDirection from '@/hooks/useDirection';
 import { LocaleButton } from '../LocaleButton';
 import { MenuToggleButton } from '../MenuToggleButton';
 import { Overlay } from '../Overlay';
+import { Container } from '@/components/ui/Container';
 
-export interface NavbarProps {
+export interface HeaderProps {
   navLinks: NavLinks[];
   locales: Locales[];
   locale: string;
@@ -26,7 +27,7 @@ export interface Locales {
   isActive: boolean;
 }
 
-export const Navbar = ({ navLinks, locales, locale }: NavbarProps): JSX.Element => {
+export const Header = ({ navLinks, locales, locale }: HeaderProps): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false);
   const { isRtl } = useDirection();
   useHideBodyOverflow(isOpen);
@@ -40,8 +41,8 @@ export const Navbar = ({ navLinks, locales, locale }: NavbarProps): JSX.Element 
         }}
         className="lg:opacity-0"
       />
-      <header className={cx(s.navbar)} dir="ltr">
-        <div className="container flex flex-wrap items-center justify-between mx-auto h-24">
+      <header className={cx(s.header)} dir="ltr">
+        <Container className="flex flex-wrap items-center justify-between h-24">
           <Link href="/" className="order-1">
             <Logo />
           </Link>
@@ -65,12 +66,12 @@ export const Navbar = ({ navLinks, locales, locale }: NavbarProps): JSX.Element 
             ))}
           </div>
           <nav
-            className={cx(s.navbar__nav, 'order-2', {
+            className={cx(s.header__nav, 'order-2', {
               'scale-100': isOpen,
               'max-md:scale-0 max-md:invisible': !isOpen,
             })}
           >
-            <div className={cx(s.navbar__nav__inner)} dir={isRtl ? 'rtl' : 'ltr'}>
+            <div className={cx(s.header__nav__inner)} dir={isRtl ? 'rtl' : 'ltr'}>
               {navLinks.map((l) => (
                 <Link className="d-block max-md:mb-8" href={l.url} key={l.url}>
                   {l.name}
@@ -89,7 +90,7 @@ export const Navbar = ({ navLinks, locales, locale }: NavbarProps): JSX.Element 
               </div>
             </div>
           </nav>
-        </div>
+        </Container>
       </header>
       <div className="h-24"></div>
     </>

@@ -5,7 +5,7 @@
 .header__nav {
   @apply items-center justify-between max-md:transition max-md:duration-200 w-full bg-black origin-top-right text-white border-gray-400;
   @apply max-md:fixed max-md:top-24 max-md:right-0 sm:max-w-sm md:max-w-none;
-  @apply border-0 sm:border-l max-md:border-t-2 max-md:border-b md:border-l-0;
+  @apply border-0 sm:border-l-2 max-md:border-t-2 max-md:border-b md:border-l-0;
   @apply md:flex md:w-auto md:order-1;
 }
 .header__nav__inner {

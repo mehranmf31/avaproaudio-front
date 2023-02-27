@@ -13,7 +13,7 @@ export const Overlay = ({ isOpen, onClick, className }: OverlayProps): JSX.Eleme
       className={cx(
         className,
         'fixed top-0 bottom-0 left-0 right-0',
-        'duration-200 border-0 bg-black',
+        'duration-200 border-0 bg-black z-10',
         {
           'pointer-events-none opacity-0': !isOpen,
           'opacity-80': isOpen,

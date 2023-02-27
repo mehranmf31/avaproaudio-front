@@ -16,11 +16,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  @apply bg-gray-100;
+  @apply bg-black;
 }
 
 body::-webkit-scrollbar-thumb {
-  @apply bg-gray-300;
+  @apply bg-gray-700;
   @apply rounded-lg;
   @apply w-1;
 }

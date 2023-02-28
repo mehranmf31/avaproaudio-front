@@ -1,0 +1,18 @@
+.whereToBuyBanner__background {
+  height: 34rem;
+  width: auto;
+  @apply object-cover mx-auto;
+  @apply max-lg:h-80;
+}
+
+.whereToBuyBanner__title {
+  @apply text-yellow-400 text-5xl sm:text-7xl lg:text-9xl text-center font-bold z-10 mt-10 sm:mt-12 lg:mt-24;
+}
+
+.whereToBuyBanner__description {
+  @apply text-white text-center text-xl sm:text-2xl lg:text-4xl mt-5 sm:mt-8 lg:mt-14;
+}
+
+.whereToBuyBanner__links {
+  @apply border border-white py-3 px-7 lg:py-4 lg:px-12 rounded-full text-base sm:text-xl lg:text-2xl hover:bg-white hover:text-black duration-150;
+}

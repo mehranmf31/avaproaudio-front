@@ -20,6 +20,8 @@
     "classnames": "^2.3.2",
     "eslint-config-next": "13.1.6",
     "next": "13.1.6",
+    "next-intl": "^2.10.4",
+    "next-translate": "^2.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
@@ -49,6 +51,7 @@
     "eslint-plugin-storybook": "^0.6.10",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
+    "next-translate-plugin": "^2.0.2",
     "postcss": "^8.4.14",
     "prettier": "2.8.3",
     "storybook-css-modules": "^1.0.8",

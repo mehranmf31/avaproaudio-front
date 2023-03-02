@@ -22,8 +22,8 @@ export default function Home() {
         title={t('whereToBuyTitle')}
         description={t('whereToBuyDescription')}
         distributors={[
-          { label: 'Online Shop', link: 'https://www.kalasys.com/' },
-          { label: 'Distributors', link: DISTRIBUTORS },
+          { label: t('whereToBuyOnlineShopLabel'), link: 'https://www.kalasys.com/' },
+          { label: t('whereToBuyDistributorsLabel'), link: DISTRIBUTORS },
         ]}
       />
     </>

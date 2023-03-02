@@ -1,7 +1,7 @@
 import { Header } from '../Header';
 import { useRouter } from 'next/router';
 import { Footer } from '@/components/common/Footer';
-import useTranslation from '@/hooks/useTranslation';
+import useLayoutData from '@/hooks/useLayoutData';
 import useDirection from '@/hooks/useDirection';
 import { locales } from '@/constants/locales';
 
@@ -10,7 +10,7 @@ export interface LayoutProps {
 }
 
 export const Layout = ({ children }: LayoutProps): JSX.Element => {
-  const { header, footer } = useTranslation();
+  const { header, footer } = useLayoutData();
   const { locale } = useRouter();
 
   useDirection();

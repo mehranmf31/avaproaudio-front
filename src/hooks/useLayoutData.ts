@@ -1,10 +1,10 @@
 import { useRouter } from 'next/router';
-import * as langData from '../constants/locales';
+import * as langData from '../constants/layoutData';
 
-const useTranslation = (): any => {
+const useLayoutData = (): any => {
   const router = useRouter();
 
   return { ...langData[router.locale as keyof typeof langData] };
 };
 
-export default useTranslation;
+export default useLayoutData;

@@ -25,7 +25,6 @@ export interface NavLinks {
 export interface Locales {
   language: string;
   label: string;
-  isActive: boolean;
 }
 
 export const Header = ({ navLinks, locales, locale }: HeaderProps): JSX.Element => {

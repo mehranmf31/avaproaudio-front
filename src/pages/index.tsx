@@ -1,8 +1,8 @@
 import Head from 'next/head';
-import { Container } from '@/components/ui/Container';
-import { WhereToBuyBanner } from '@/components/distributors/WhereToBuyBanner';
 import useTranslation from 'next-translate/useTranslation';
 import { DISTRIBUTORS } from '@/constants/appRoutes';
+import { WhereToBuyBanner } from '@/components/distributors';
+import { Container } from '@/components/ui';
 
 export default function Home() {
   const { t } = useTranslation('common');

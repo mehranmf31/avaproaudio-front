@@ -5,7 +5,7 @@ interface DirectionRequestResult {
   isRtl: boolean;
 }
 
-const useDirection = (): DirectionRequestResult => {
+export const useDirection = (): DirectionRequestResult => {
   const { locale } = useRouter();
   const isRtl = locale === 'fa';
 
@@ -17,5 +17,3 @@ const useDirection = (): DirectionRequestResult => {
     isRtl,
   };
 };
-
-export default useDirection;

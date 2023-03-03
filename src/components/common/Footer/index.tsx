@@ -1,8 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
-import { SocialMediaLink } from '../SocialMediaLink';
-import { FooterDataRow } from '../FooterDataRow';
-import { Container } from '@/components/ui/Container';
+import { SocialMediaLink, FooterDataRow } from '@/components/common';
+import { Container } from '@/components/ui';
 
 export interface FooterProps {
   className?: string;

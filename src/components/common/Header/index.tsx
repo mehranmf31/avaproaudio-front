@@ -1,15 +1,10 @@
 import React, { useState } from 'react';
-import { Logo } from '../Logo';
 import Link from 'next/link';
 import cx from 'classnames';
 import s from './Header.module.css';
-import useHideBodyOverflow from '@/hooks/useHideBodyOverflow';
-import useDirection from '@/hooks/useDirection';
-import { LocaleButton } from '../LocaleButton';
-import { MenuToggleButton } from '../MenuToggleButton';
-import { Overlay } from '../Overlay';
-import { Container } from '@/components/ui/Container';
-import { useAutoCloseMenu } from '../../../hooks/useAutoCloseMenu';
+import { Container } from '@/components/ui';
+import { useHideBodyOverflow, useDirection, useAutoCloseMenu } from '@/hooks';
+import { Logo, LocaleButton, MenuToggleButton, Overlay } from '@/components/common';
 
 export interface HeaderProps {
   navLinks: NavLinks[];

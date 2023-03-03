@@ -1,6 +1,6 @@
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
-import { Layout } from '@/components/common/Layout';
+import { Layout } from '@/components/common';
 import { Vazirmatn } from '@next/font/google';
 const vazir = Vazirmatn({ subsets: ['arabic', 'latin'] });
 function MyApp({ Component, pageProps }: AppProps) {

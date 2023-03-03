@@ -1,8 +1,7 @@
 import { Header } from '../Header';
 import { useRouter } from 'next/router';
-import { Footer } from '@/components/common/Footer';
-import useLayoutData from '@/hooks/useLayoutData';
-import useDirection from '@/hooks/useDirection';
+import { Footer } from '@/components/common';
+import { useLayoutData, useDirection } from '@/hooks';
 import { locales } from '@/constants/locales';
 
 export interface LayoutProps {

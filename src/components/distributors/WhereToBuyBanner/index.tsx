@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import cx from 'classnames';
 import s from './WhereToBuyBanner.module.css';
-import { Container } from '@/components/ui/Container';
 import Link from 'next/link';
+import { Container } from '@/components/ui';
 
 export interface WhereToBuyBannerProps {
   title: string;

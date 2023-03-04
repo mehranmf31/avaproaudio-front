@@ -4,14 +4,14 @@ import cx from 'classnames';
 export interface LocaleButtonProps {
   language: string;
   label: string;
-  isActive: boolean;
+  isActive?: boolean;
   className?: string;
 }
 
 export const LocaleButton = ({
   language,
   label,
-  isActive,
+  isActive = false,
   className,
 }: LocaleButtonProps): JSX.Element => {
   return (

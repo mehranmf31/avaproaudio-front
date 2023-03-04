@@ -10,13 +10,13 @@ export interface FooterDataRowProps {
 export const FooterDataRow = ({ title, text, link }: FooterDataRowProps): JSX.Element => {
   return link !== undefined ? (
     <Link href={link} className="block font-thin text-xl">
-      {title !== undefined && <span className="font-light">{title}: </span>}
+      {title !== undefined && <h4 className="font-light inline">{title}: </h4>}
       {text.length > 31 ? <p>{text}</p> : text}
     </Link>
   ) : (
     <div className="block font-thin text-xl">
-      {title !== undefined && <span className="font-light">{title}: </span>}
-      {text.length > 31 ? <p className="mt-1">{text}</p> : text}
+      {title !== undefined && <h4 className="font-light inline">{title}: </h4>}
+      {text.length > 31 ? <p className="mt-1">{text}</p> : <span>{text}</span>}
     </div>
   );
 };

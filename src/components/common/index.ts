@@ -7,3 +7,4 @@ export { Overlay } from './Overlay';
 export { SocialMediaLink } from './SocialMediaLink';
 export { Header } from './Header';
 export { Layout } from './Layout';
+export { Icon } from './Icon';

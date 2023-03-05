@@ -5,6 +5,7 @@
 @import './reset.css';
 @import './image-placeholder.css';
 @import './loading.css';
+@import './direction.css';
 
 body {
   @apply bg-black;

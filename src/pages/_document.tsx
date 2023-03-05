@@ -14,9 +14,9 @@ export default function MyDocument(props: MyDocumentProps) {
   const { locale = 'en' } = props;
 
   return (
-    <Html dir={locale === 'fa' ? 'rtl' : 'ltr'} lang={locale}>
+    <Html lang={locale}>
       <Head />
-      <body>
+      <body dir={locale === 'fa' ? 'rtl' : 'ltr'}>
         <Main />
         <NextScript />
       </body>

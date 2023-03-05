@@ -8,6 +8,7 @@ export interface WhereToBuyBannerProps {
   title: string;
   description: string;
   distributors: DistributorLinks[];
+  className?: string;
 }
 
 export interface DistributorLinks {
@@ -19,9 +20,10 @@ export const WhereToBuyBanner = ({
   title,
   description,
   distributors,
+  className,
 }: WhereToBuyBannerProps): JSX.Element => {
   return (
-    <div className="relative">
+    <div className={cx(className, 'relative')}>
       <Image
         className={cx(s.whereToBuyBanner__background)}
         src="/distributors_banner.png"

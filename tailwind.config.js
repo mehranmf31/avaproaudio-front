@@ -6,7 +6,14 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     container: { padding: { DEFAULT: '1.5rem', xl: '6rem' } },
-    extend: { fontFamily: { vazir: ['var(--vazir-font)', ...fontFamily.sans] } },
+    extend: {
+      fontFamily: { vazir: ['var(--vazir-font)', ...fontFamily.sans] },
+      borderRadius: {
+        '4xl': '2rem',
+        '5xl': '3rem',
+        '6xl': '4.5rem',
+      },
+    },
   },
   plugins: [],
 };

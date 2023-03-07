@@ -12,7 +12,3 @@
 .whereToBuyBanner__description {
   @apply text-white text-center text-xl sm:text-2xl lg:text-4xl mt-5 sm:mt-8 lg:mt-14;
 }
-
-.whereToBuyBanner__links {
-  @apply border border-white py-3 px-7 lg:py-4 lg:px-12 rounded-full text-base sm:text-xl lg:text-2xl hover:bg-white hover:text-black duration-150;
-}

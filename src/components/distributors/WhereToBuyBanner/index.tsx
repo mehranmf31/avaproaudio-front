@@ -39,7 +39,6 @@ export const WhereToBuyBanner = ({
           {distributors.map((d) => (
             <Link href={d.link} key={d.label}>
               <Button color={'outlined-white'}>{d.label}</Button>
-              {/* <button className={cx(s.whereToBuyBanner__links)}></button> */}
             </Link>
           ))}
         </div>

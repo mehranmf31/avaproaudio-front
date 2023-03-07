@@ -5,7 +5,6 @@ interface ButtonProps extends React.HTMLProps<HTMLButtonElement> {
   color?: 'light-red' | 'white' | 'red' | 'outlined-white' | 'none';
   type?: 'submit' | 'button' | 'reset';
   hasPadding?: boolean;
-  isLoading?: boolean;
 }
 
 export const Button = ({

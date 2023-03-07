@@ -2,7 +2,7 @@ import Image from 'next/image';
 import cx from 'classnames';
 import s from './WhereToBuyBanner.module.css';
 import Link from 'next/link';
-import { Container } from '@/components/ui';
+import { Button, Container } from '@/components/ui';
 
 export interface WhereToBuyBannerProps {
   title: string;
@@ -38,7 +38,8 @@ export const WhereToBuyBanner = ({
         <div className="flex justify-center gap-6 mt-6 sm:mt-8 lg:mt-16">
           {distributors.map((d) => (
             <Link href={d.link} key={d.label}>
-              <button className={cx(s.whereToBuyBanner__links)}>{d.label}</button>
+              <Button color={'outlined-white'}>{d.label}</Button>
+              {/* <button className={cx(s.whereToBuyBanner__links)}></button> */}
             </Link>
           ))}
         </div>

@@ -8,7 +8,6 @@ interface HeadingProps {
   customSize?: Sizes;
   className?: string;
   children?: React.ReactNode;
-  html?: string;
   onClick?: () => void;
 }
 
@@ -32,7 +31,6 @@ export const Heading = ({
   variant = 'subHeading',
   customSize = 'none',
   children,
-  html,
   onClick,
 }: HeadingProps): JSX.Element => {
   const componentsMap: {
@@ -72,15 +70,8 @@ export const Heading = ({
     className,
   );
 
-  const htmlContentProps =
-    html !== undefined
-      ? {
-          dangerouslySetInnerHTML: { __html: html },
-        }
-      : {};
-
   return (
-    <Component className={HeadingClassName} onClick={onClick} {...htmlContentProps}>
+    <Component className={HeadingClassName} onClick={onClick}>
       {children}
     </Component>
   );

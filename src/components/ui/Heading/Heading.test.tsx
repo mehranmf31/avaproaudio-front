@@ -23,11 +23,3 @@ test('renders a custom-sized heading when customSize prop is set', () => {
   expect(customSizeHeading).toBeInTheDocument();
   expect(customSizeHeading).toHaveClass('heading__5x');
 });
-
-test('renders HTML content when html prop is set', () => {
-  const htmlContent = '<em>HTML</em> content';
-  render(<Heading html={htmlContent} />);
-  const htmlHeading = screen.getByRole('heading');
-  expect(htmlHeading).toHaveTextContent('HTML content');
-  expect(htmlHeading.querySelector('em')).toBeInTheDocument();
-});

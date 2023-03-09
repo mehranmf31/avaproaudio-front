@@ -1,0 +1,49 @@
+.heading {
+  @apply xl:text-8xl md:text-7xl text-5xl;
+}
+
+.pageHeading {
+  @apply xl:text-7xl md:text-6xl text-4xl;
+}
+
+.sectionHeading {
+  @apply xl:text-6xl md:text-5xl text-3xl;
+}
+
+.subHeading {
+  @apply xl:text-5xl md:text-4xl text-2xl;
+}
+
+.heading__md {
+  @apply xl:text-base md:text-sm text-sm;
+}
+.heading__lg {
+  @apply xl:text-lg md:text-base text-sm;
+}
+.heading__xl {
+  @apply xl:text-xl md:text-lg text-sm;
+}
+.heading__2x {
+  @apply xl:text-2xl md:text-xl text-base;
+}
+.heading__3x {
+  @apply xl:text-3xl md:text-2xl text-lg;
+}
+.heading__4x {
+  @apply xl:text-4xl md:text-3xl text-xl;
+}
+.heading__5x {
+  @apply xl:text-5xl md:text-4xl text-2xl;
+}
+.heading__6x {
+  @apply xl:text-6xl md:text-5xl text-3xl;
+}
+.heading__7x {
+  @apply xl:text-7xl md:text-6xl text-4xl;
+}
+.heading__8x {
+  @apply xl:text-8xl md:text-7xl text-5xl;
+}
+.heading__9x {
+  @apply xl:text-9xl md:text-8xl text-5xl;
+}

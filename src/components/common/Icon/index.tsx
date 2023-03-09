@@ -27,13 +27,13 @@ export const Icon = ({
       height={255}
       alt={`${name} icon`}
       className={cx(className, rtlRotation, {
-        'w-10': size === 'sm',
-        'w-12': size === 'md',
-        'w-14': size === 'lg',
-        'w-16': size === 'xl',
-        'w-20': size === '2xl',
-        'w-24': size === '3xl',
-        'w-28': size === '4xl',
+        'w-5 md:w-8 xl:w-10': size === 'sm',
+        'w-6 md:w-9 xl:w-12': size === 'md',
+        'w-7 md:w-10 xl:w-14': size === 'xl',
+        'w-8 md:w-10 xl:w-16': size === 'xl',
+        'w-9 md:w-12 xl:w-20': size === '2xl',
+        'w-10 md:w-14 xl:w-24': size === '3xl',
+        'w-12 md:w-16 xl:w-28': size === '4xl',
         'rtl-rotate': rtlRotation,
       })}
     />

@@ -17,9 +17,9 @@ export const Button = ({
   ...props
 }: ButtonProps): JSX.Element => {
   const buttonStyle: string = cx(
-    'font-semibold rounded-full cursor-pointer text-md md:text-xl duration-200',
+    'font-semibold rounded-full cursor-pointer text-base md:text-lg xl:text-xl duration-200',
     {
-      'p-3 px-5 xl:p-4 xl:px-9': !!hasPadding,
+      'p-3 px-5 md:px-8 xl:p-4 xl:px-9': !!hasPadding,
       'bg-red-400 text-white': color === 'light-red',
       'bg-red-600 text-white': color === 'red',
       'bg-white text-black': color === 'white',

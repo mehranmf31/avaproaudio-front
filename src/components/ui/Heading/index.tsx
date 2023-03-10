@@ -5,7 +5,7 @@ import cx from 'classnames';
 
 interface HeadingProps {
   variant?: Variant;
-  customSize?: Sizes;
+  size?: Sizes;
   className?: string;
   children?: React.ReactNode;
   onClick?: () => void;
@@ -29,7 +29,7 @@ type Sizes =
 export const Heading = ({
   className = '',
   variant = 'subHeading',
-  customSize = 'none',
+  size = 'none',
   children,
   onClick,
 }: HeadingProps): JSX.Element => {
@@ -55,17 +55,17 @@ export const Heading = ({
       [s.pageHeading]: variant === 'pageHeading',
       [s.sectionHeading]: variant === 'sectionHeading',
       [s.subHeading]: variant === 'subHeading',
-      [s.heading__md]: customSize === 'base',
-      [s.heading__lg]: customSize === 'lg',
-      [s.heading__xl]: customSize === 'xl',
-      [s.heading__2x]: customSize === '2xl',
-      [s.heading__3x]: customSize === '3xl',
-      [s.heading__4x]: customSize === '4xl',
-      [s.heading__5x]: customSize === '5xl',
-      [s.heading__6x]: customSize === '6xl',
-      [s.heading__7x]: customSize === '7xl',
-      [s.heading__8x]: customSize === '8xl',
-      [s.heading__9x]: customSize === '9xl',
+      [s.heading__md]: size === 'base',
+      [s.heading__lg]: size === 'lg',
+      [s.heading__xl]: size === 'xl',
+      [s.heading__2x]: size === '2xl',
+      [s.heading__3x]: size === '3xl',
+      [s.heading__4x]: size === '4xl',
+      [s.heading__5x]: size === '5xl',
+      [s.heading__6x]: size === '6xl',
+      [s.heading__7x]: size === '7xl',
+      [s.heading__8x]: size === '8xl',
+      [s.heading__9x]: size === '9xl',
     },
     className,
   );

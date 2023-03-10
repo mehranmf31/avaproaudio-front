@@ -5,9 +5,10 @@ import cx from 'classnames';
 
 interface TextProps {
   variant?: Variant;
-  customSize?: Sizes;
+  size?: Sizes;
   className?: string;
   children?: React.ReactNode;
+  html?: string;
 }
 
 type Variant = 'paragraph' | 'inlineText' | 'div';
@@ -16,8 +17,9 @@ type Sizes = 'none' | 'base' | 'lg' | 'xl' | '2xl' | '3xl';
 export const Text = ({
   className = '',
   variant = 'paragraph',
-  customSize = 'base',
+  size = 'base',
   children,
+  html,
 }: TextProps): JSX.Element => {
   const componentsMap: {
     [P in Variant]: React.ComponentType<any> | string;
@@ -34,14 +36,17 @@ export const Text = ({
     | string = componentsMap[variant];
 
   const TextClassName = cx(
-    s.root,
     {
-      [s.text__base]: customSize === 'base',
-      [s.text__lg]: customSize === 'lg',
-      [s.text__xl]: customSize === 'xl',
+      [s.text__base]: size === 'base',
+      [s.text__lg]: size === 'lg',
+      [s.text__xl]: size === 'xl',
     },
     className,
   );
 
-  return <Component className={TextClassName}>{children}</Component>;
+  return html !== undefined && children === undefined ? (
+    <Component className={TextClassName} dangerouslySetInnerHTML={{ __html: html }} />
+  ) : (
+    <Component className={TextClassName}>{children}</Component>
+  );
 };

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import cx from 'classnames';
 import s from './WhereToBuyBanner.module.css';
 import Link from 'next/link';
-import { Button, Container } from '@/components/ui';
+import { Button, Container, Heading, Text } from '@/components/ui';
 
 export interface WhereToBuyBannerProps {
   title: string;
@@ -33,8 +33,12 @@ export const WhereToBuyBanner = ({
         priority
       />
       <Container className="absolute top-0 bottom-0 left-0 right-0 z-1">
-        <h3 className={cx(s.whereToBuyBanner__title)}>{title}</h3>
-        <p className={cx(s.whereToBuyBanner__description)}>{description}</p>
+        <Heading className={cx(s.whereToBuyBanner__title)} size="9xl">
+          {title}
+        </Heading>
+        <Text size="xl" className={cx(s.whereToBuyBanner__description)}>
+          {description}
+        </Text>
         <div className="flex justify-center gap-6 mt-6 sm:mt-8 lg:mt-16">
           {distributors.map((d) => (
             <Link href={d.link} key={d.label}>

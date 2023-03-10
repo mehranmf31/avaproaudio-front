@@ -6,12 +6,10 @@
 }
 
 .whereToBuyBanner__title {
-  @apply text-yellow-400 text-center font-bold z-10;
-  @apply text-5xl md:text-7xl lg:text-9xl;
+  @apply text-yellow-400 text-center font-bold z-10 mt-12 lg:mt-28;
 }
 
 .whereToBuyBanner__description {
-  @apply mt-5 sm:mt-8 lg:mt-14;
+  @apply my-5 sm:my-10 lg:my-14;
   @apply text-white text-center;
-  @apply text-2xl lg:text-4xl;
 }

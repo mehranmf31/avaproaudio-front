@@ -2,5 +2,10 @@
   "whereToBuyTitle": "Where To Buy",
   "whereToBuyDescription": "You May Choose To Buy Or Rent By Following The Links",
   "whereToBuyOnlineShopLabel": "Online Shop",
-  "whereToBuyDistributorsLabel": "Distributors"
+  "whereToBuyDistributorsLabel": "Distributors",
+  "activeSpeakersTitle": "Active Speakers",
+  "activeSpeakersDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur perferendis harum minima recusandae",
+  "passiveSpeakersTitle": "Passive Speakers",
+  "passiveSpeakersDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur perferendis harum minima recusandae",
+  "comingSoon": "Coming Soon"
 }
